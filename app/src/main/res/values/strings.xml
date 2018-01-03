@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GetInShapeApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_entrance_fragment">ברוך הבא!</string>
+    <string name="hello_sign_fragment">Hello sign fragment</string>
+    <string name="hello_log_fragment">Hello log fragment</string>
 </resources>
