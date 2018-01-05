@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tmrapps.getinshapeapp.EntranceFragment"
-    android:orientation="vertical">
+    tools:context="tmrapps.getinshapeapp.User.EntranceFragment"
+    android:orientation="vertical"
+    >
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:text="@string/hello_entrance_fragment" />
-
-    <Button
-        android:id="@+id/signBtn"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="הרשמה" />
+        android:gravity="center"
+        android:text="@string/hello_entrance_fragment"
+        android:textAppearance="@android:style/TextAppearance.Large" />
 
     <Button
         android:id="@+id/logBtn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="התחברות" />
+        android:layout_gravity="center_horizontal"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign In" />
+
 </LinearLayout>

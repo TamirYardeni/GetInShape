@@ -1,13 +1,13 @@
-package tmrapps.getinshapeapp;
+package tmrapps.getinshapeapp.User;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 
-public class EntranceActivity extends Activity implements EntranceFragment.OnFragmentInteractionListener, LogFragment.OnFragmentInteractionListener,  SignFragment.OnFragmentInteractionListener {
+import tmrapps.getinshapeapp.R;
+
+public class EntranceActivity extends Activity implements EntranceFragment.OnFragmentInteractionListener, LogFragment.OnFragmentInteractionListener, SignFragment.OnFragmentInteractionListener {
 
     private EntranceFragment entranceFragment;
 

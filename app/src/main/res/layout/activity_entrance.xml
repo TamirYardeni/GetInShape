@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tmrapps.getinshapeapp.EntranceActivity">
+    tools:context="tmrapps.getinshapeapp.User.EntranceActivity">
 
     <FrameLayout
         android:id="@+id/main_fragment_container"
@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
         <fragment
             android:id="@+id/main_fragment"
-            android:name="tmrapps.getinshapeapp.EntranceFragment"
+            android:name="tmrapps.getinshapeapp.User.EntranceFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/fragment_entrance" />
