@@ -1,5 +1,6 @@
 package tmrapps.getinshapeapp.User;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
 import tmrapps.getinshapeapp.User.Model.User;
@@ -10,11 +11,12 @@ import tmrapps.getinshapeapp.User.Model.User;
 
 public class UserViewModel extends ViewModel {
     private String userId;
-    private User user;
+    private LiveData<User> user;
     public void init(String userId) {
         this.userId = userId;
     }
-    public User getUser() {
+
+    public LiveData<User> getUser() {
         return user;
     }
 }

@@ -1,8 +1,10 @@
 package tmrapps.getinshapeapp.User;
 
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,16 @@ import tmrapps.getinshapeapp.R;
 public class EntranceFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
+    private static final String UID_KEY = "uid";
+    private UserViewModel userViewModel;
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        String userId = getArguments().getString(UID_KEY);
+        userViewModel =
+                ViewModelProviders.of(this).get(UserViewModel.class);
+        userViewModel.init(userId);
+    }
 
     public EntranceFragment() {
 

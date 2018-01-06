@@ -5,4 +5,11 @@ package tmrapps.getinshapeapp.User.Model;
  */
 
 public class UserFirebase {
+    public interface Callback<T> {
+        void onComplete(T data);
+    }
+
+    public static void getUserAndObserve(final Callback<User> callback) {
+
+    }
 }
